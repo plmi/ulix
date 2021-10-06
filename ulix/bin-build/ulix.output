@@ -1,0 +1,37 @@
+Kernel page directory set up.
+Ulix-i386 0.13                           Build: Fr 20. Nov 13:35:58 CET 2015
+Current time: 2019/10/16 22:55:13
+RAM: 64 MByte, mapped to 0xD0000000-0xD3FFFFFF
+VT:  Initialized ten terminals (press [Alt-1] to [Alt-0])
+FDC: fd0 (1440 KByte), fd1 (1440 KByte)
+ATA: hda (1440 KByte), hdb (100000 KByte)
+mount: dev[03:00] = /dev/hda on /     type minix (options 0)
+mount: dev[02:01] = /dev/fd1 on /mnt/ type minix (options 0)
+mount: dev[03:40] = /dev/hdb on /tmp/ type minix (options 0)
+mount: none                  on /dev/ type dev   (options 0)
+swapon: enabling /tmp/swap (64 MByte)
+Starting five shells on tty0..tty4. Press [Ctrl-L] for de/en keyboard.
+swapper launched in background. output at console 10
+
+ulix login: ulix login: ulix login: ulix login: esser
+Password: (auto login)
+[2.0] swapper: 15159 free frames. threshold = 14684.
+ulix login: root
+Password: (auto login)
+[2.1] swapper: 15134 free frames. threshold = 14684.
+esser@ulix[8]:/home/esser$ 
+esser@ulix[8]:/home/esser$ psroot@ulix[9]:/root# 
+[2.2] swapper: 15109 free frames. threshold = 14684.
+ PID  PPID  UID  GID TERM STATE  CWD             CMD
+   1     0    0    0 tty0 READY  /               [idle]                      
+   2     1    0    0 tty9 READY  /               [swapper]                   
+   3     1 1000  100 tty0 WAIT4  /home/esser     login                       
+   4     1    0    0 tty1 WAIT4  /root           login                       
+   5     1    0    0 tty2 W_KEY  /               login                       
+   6     1    0    0 tty3 W_KEY  /               login                       
+   7     1    0    0 tty4 W_KEY  /               login                       
+   8     3 1000  100 tty0 WAIT4  /home/esser     /bin/sh                     
+   9     4    0    0 tty1 W_KEY  /root           /bin/sh                     
+  10     8 1000  100 tty0 READY  /home/esser     ps                          
+[2.3] swapper: 15134 free frames. threshold = 14684.
+esser@ulix[8]:/home/esser$ 
