@@ -10,4 +10,3 @@ RUN apt-get update \
 WORKDIR /root
 RUN mkdir ulix
 WORKDIR /root/ulix
-RUN chmod +x /root/ulix/bin-build/assembler-parser.py
